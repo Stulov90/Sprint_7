@@ -12,7 +12,6 @@ target/
 *.iws
 *.iml
 *.ipr
-.allure/allure-2.15.0/
 
 ### Eclipse ###
 .apt_generated
