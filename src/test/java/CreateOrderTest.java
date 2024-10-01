@@ -31,6 +31,7 @@ public class CreateOrderTest {
         this.comment = comment;
         this.color = color;
     }
+
     @Parameterized.Parameters
     public static Object[][] createOrderTestData() {
         return new Object[][]{
@@ -43,7 +44,7 @@ public class CreateOrderTest {
 
     @Test
     @DisplayName("Создание заказа")
-public void createOrderTest(){
+    public void createOrderTest() {
         Order order = new Order(firstName, lastName, address, metroStation, phone, rentTime, deliveryDate, comment, color);
         Response response = OrderSteps.createOrder(order);
         response.then().log().all().assertThat().statusCode(201).
