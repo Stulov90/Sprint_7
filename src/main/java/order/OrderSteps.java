@@ -3,7 +3,7 @@ package order;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
-import static constants.Constants.spec;
+import static constants.Client.spec;
 
 public class OrderSteps {
 
@@ -11,7 +11,7 @@ public class OrderSteps {
 
 
     @Step("Создание заказа")
-    public static Response createOrderTest(Order order) {
+    public static Response createOrder(Order order) {
         return spec()
                 .body(order)
                 .when()

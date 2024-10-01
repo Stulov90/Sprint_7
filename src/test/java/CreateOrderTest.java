@@ -45,7 +45,7 @@ public class CreateOrderTest {
     @DisplayName("Создание заказа")
 public void createOrderTest(){
         Order order = new Order(firstName, lastName, address, metroStation, phone, rentTime, deliveryDate, comment, color);
-        Response response = OrderSteps.createOrderTest(order);
+        Response response = OrderSteps.createOrder(order);
         response.then().log().all().assertThat().statusCode(201).
                 and().body("track", notNullValue());
     }

@@ -5,7 +5,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;
 
-public class Constants {
+public class Client {
     public static final String BASE_URL = "https://qa-scooter.praktikum-services.ru";
     public static final String BASE_PATH = "api/v1";
 

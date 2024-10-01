@@ -3,7 +3,7 @@ package courier;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
-import static constants.Constants.spec;
+import static constants.Client.spec;
 
 public class CourierSteps extends CourierDefaultData {
 
